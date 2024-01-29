@@ -24,9 +24,8 @@ let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
-/* Steal some fuel from the shuttle:
- * /
- 
+// Steal some fuel from the shuttle:
+
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
 
 //b). You must siphon off fuel without alerting the TAs. Inside your function, you want to reduce the fuel level as much as possible WITHOUT changing the color returned by the checkFuel function.
@@ -35,8 +34,37 @@ console.log("Hold status: " + holdStatus(cargoHold));
 
 //d). Decide where to best place your function call to gather our new fuel.
 
-/* Next, liberate some of that glorious cargo.
- * /
+
+let notStolenFuel = function(a) {
+ if (checkFuel(a) === 'green') {
+  return a - 100001;
+ } else if (checkFuel(a) === 'yellow') {
+  return a - 50001;
+ } else {
+  return a;
+ }
+}
+
+
+// Next, liberate some of that glorious cargo.
+
+
+let innocentVariable2 = function(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 'gold') {
+      newArr = arr.splice().indexOf('gold')
+      arr.push('a whole bunch of nothing')
+    } 
+    if (arr[i] === 'AE-35 unit') {
+      newArr = arr.splice().indexOf('AE-35 unit')
+      arr.push('a whole bunch of nothing')
+    }
+  }
+  return newArr;
+}
+console.log(innocentVariable2(cargoHold));
+
 
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
@@ -46,8 +74,15 @@ console.log("Hold status: " + holdStatus(cargoHold));
 
 //d). Don’t get hasty, matey! Remember to test your function.
 
-/* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
- * /
+// Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
+
+
+// let irs = function(fuelLevel, cargoHold) {
+//   notStolenFuel(fuelLevel);
+//   innocentVariable2(cargoHold);
+
+// }
+
  
 //a). Define a function called irs that can take fuelLevel and cargoHold as arguments.
 	

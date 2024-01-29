@@ -19,3 +19,23 @@ function getValidInput(prompt, isValid) {
 // that ensures input is a vowel
 
 // Be sure to test your code!
+
+let startsWithA = function(userInput) {
+  if (userInput.charAt(0) === "a") {
+    return true;
+  }
+
+  return false;
+}
+
+console.log(getValidInput('Type a word that starts with "a". ', startsWithA));
+
+let isVowel = function(userInput) {
+  if (userInput === 'a' || userInput === 'e' || userInput === 'i' || userInput === 'o' || userInput === 'u') {
+    return true;
+  }
+
+  return false;
+}; 
+
+console.log(getValidInput('Type a vowel. ', isVowel));

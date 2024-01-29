@@ -66,6 +66,7 @@ let innocentVariable2 = function(arr) {
 console.log(innocentVariable2(cargoHold));
 
 
+
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
 //b). You need to swipe two items from the cargo hold. Choose well. Stealing water ain’t gonna get us rich. Put the swag into a new array and return it from the function.

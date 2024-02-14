@@ -19,3 +19,9 @@ console.log(fox);
 console.log(fox.age, fox.color);
 
 //Try modifying or adding properties below.
+
+fox.mass = 15;
+fox.mood = 'happy';
+
+console.log(fox);
+console.log(fox.mass, fox.mood);

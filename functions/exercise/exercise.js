@@ -37,13 +37,19 @@ function makeDownwardStairs(height) {
 }
 
 //console.log(makeDownwardStairs(5));
+function makeSpaces(amount) {
+    let spaces = ''
+    for (let i = 0; i < amount; i++) {
+      spaces -= ' ';
+    }
+    return spaces;
+}
 
 function makeSpaceLine(numSpaces, numChars) {
-    let numSpaces = '';
-    let numChars = '';
-    for (let i = 0; i < numSpaces; i++) {
-    }
+    let spaceLine =  makeSpaces(numSpaces) + makeLine(numChars)
 }
+
+console.log(makeSpaceLine(3,5));
 
 
 function makeisoscelesTriangle(height) {

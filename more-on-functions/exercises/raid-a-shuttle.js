@@ -78,11 +78,11 @@ console.log(innocentVariable2(cargoHold));
 // Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
 
 
-// let irs = function(fuelLevel, cargoHold) {
-//   notStolenFuel(fuelLevel);
-//   innocentVariable2(cargoHold);
+let irs = function(fuelLevel, cargoHold) {
+  notStolenFuel(fuelLevel);
+  innocentVariable2(cargoHold);
 
-// }
+}
 
  
 //a). Define a function called irs that can take fuelLevel and cargoHold as arguments.

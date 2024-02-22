@@ -1,0 +1,25 @@
+/* Start adding your styling below!  */
+
+body {
+    background-color: #e0c341;
+}
+
+p {
+    color: #0a5415;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.center {
+    text-align: center;
+}
+
+#cool-text {
+    color: #3c8ade;
+}
+
+#list-color {
+    color: #a059f7;
+}

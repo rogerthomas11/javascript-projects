@@ -5,6 +5,7 @@ function init () {
     const landButton = document.getElementById("landing");
     const abortMissionButton = document.getElementById("missionAbort");
     const upButton = document.getElementById("up");
+    const downButton = document.getElementById("down");
 
     const flightStatus = document.getElementById("flightStatus");
     const shuttleBackground = document.getElementById("shuttleBackground");
@@ -34,4 +35,5 @@ function init () {
         }
     })
 }
+
 window.addEventListener("load", init);
